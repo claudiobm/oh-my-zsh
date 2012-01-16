@@ -1,0 +1,3 @@
+#compdef rake
+
+compadd $(rake --tasks | cut -d ' ' -f 2)

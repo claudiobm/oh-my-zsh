@@ -3,4 +3,9 @@
 alias sgem='sudo gem'
 
 # Find ruby file
-alias rfind='find . -name "*.rb" | xargs grep -n'
+alias rfind="find . -name '*.rb' | xargs grep -n"
+
+function cpex(){
+  FILE=$(echo $1 | sed -e "s/\.example//")
+  cp -rf $1 $FILE
+}
