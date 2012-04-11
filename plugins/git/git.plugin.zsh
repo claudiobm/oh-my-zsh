@@ -175,3 +175,13 @@ alias gignore='git update-index --assume-unchanged'
 alias gunignore='git update-index --no-assume-unchanged'
 # list temporarily ignored files
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
+
+function reload_ip() {
+	sudo ifconfig en0 down
+	sudo ifconfig en0 up
+}
+
+function ggtag(){
+  git tag $1 -m"$1"
+  ggpush --tags
+}
