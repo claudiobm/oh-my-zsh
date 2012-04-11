@@ -72,6 +72,7 @@ function remote_console() {
   /usr/bin/env ssh $1 "( cd $2 && ruby script/console production )"
 }
 
+
 function reload_folder() {
   cd ../
   cd +1
