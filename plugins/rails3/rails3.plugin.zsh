@@ -31,6 +31,7 @@ alias testlog='tail -f log/test.log'
 alias prodlog='tail -f log/production.log'
 alias rdm='rake db:migrate'
 alias rdr='rake db:rollback'
+alias rspec_exec='RAILS_ENV=test bundle exec rake db:migrate && bundle exec rspec spec'
 
 alias -g RET='RAILS_ENV=test'
 alias -g REP='RAILS_ENV=production'
