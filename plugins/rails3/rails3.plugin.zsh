@@ -37,6 +37,8 @@ alias -g RET='RAILS_ENV=test'
 alias -g REP='RAILS_ENV=production'
 alias -g RED='RAILS_ENV=development'
 
+alias rspec_exec='RAILS_ENV=test bundle exec rake db:migrate && bundle exec rspec spec'
+
 function reload_folder() {
   cd ../
   cd +1
